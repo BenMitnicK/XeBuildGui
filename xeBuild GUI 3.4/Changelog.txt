@@ -1,0 +1,510 @@
+﻿*********
+* 3.1 *
+*********
+- Updated: Now using xeBuild 1.19
+- Updated: Now using Dashlaunch 3.19
+- Updated: Now building 2.0.17526.0
+- Updated: New xell Reloaded MC Edition :)
+
+*********
+* 3.0 *
+*********
+- Updated: Now using xeBuild 1.18
+- Updated: Now using Dashlaunch 3.18.1
+- Updated: Now building 2.0.17511.0
+- Updated: Now corona4g support :)
+- Updated: Now Dump/Write NandMMC support :)
+- Updated: Now Save KVinfo in TXT file :)
+
+*********
+* 2.098 *
+*********
+- Updated: Now using xeBuild 1.17
+- Updated: Now using Dashlaunch 3.17
+- Updated: Now building 2.0.17502.0
+- Updated: All Dashboards are now downloaded from http://www.gxarena.com/ instead of from http://www.homebrew-connection.org/
+
+********
+* 2.097 *
+*********
+- Updated: Now using xeBuild 1.16
+- Updated: Now using Dashlaunch 3.16
+- Updated: Now building 2.0.17489.0
+
+*********
+* 2.096 *
+*********
+- Updated: Now using xeBuild 1.15
+- Updated: Now using Dashlaunch 3.15
+- Updated: Now building 2.0.17349.0
+
+*********
+* 2.095 *
+*********
+- Updated: Now using xeBuild 1.14
+- Updated: Now using Dashlaunch 3.14
+- Updated: Now building 2.0.17150.0
+
+*********
+* 2.094 *
+*********
+- Updated: Now using xeBuild 1.13
+- Updated: Now using Dashlaunch 3.13
+- Updated: Now building 2.0.16767.0
+
+*********
+* 2.093 *
+*********
+- Updated: Now using xeBuild 1.12
+- Updated: Now using Dashlaunch 3.12
+- Updated: Now building 2.0.16747.0
+
+*********
+* 2.092 *
+*********
+- Updated: Now using xeBuild 1.11
+- Updated: Now using Dashlaunch 3.11
+- Updated: Now building 2.0.16547.0
+
+*********
+* 2.091 *
+*********
+- Updated: Now using xeBuild 1.08
+- Updated: Now using Dashlaunch 3.08
+- Updated: Now building 2.0.16537.0
+- Updated: Now using XeLL-Reloaded v0.993 which supports video on corona!
+- Updated: CB identification list has been updated to support all current versions for identification... and there was a bugfix with the falcon one (4766 should be 5766)
+
+*********
+* 2.09  *
+*********
+- Fixed: Changed the option word "videomode" to the correct one "avregion" my bad...
+- Updated: Now using xeBuild 1.07
+- Updated: Now using Dashlaunch 3.07
+- Updated: Now building 2.0.16203.0
+
+*********
+* 2.089 *
+*********
+- Added: Can now automatically identify DGX type consoles for Freeboot creation (Only for slim with CB 9231 (trinity) or 13181 (corona) and doesn't work for 4GB consoles still!)
+- Fixed: Missed some enforcing shit for trinity before, my bad ;) fixed now... hopefully... don't really care about it seeing as it's no big deal if you do select RGH 1.0 or 2.0 for trinity, they're all the same anyways for freeboot ;)
+
+*********
+* 2.088 *
+*********
+- Fixed: Vital bug in failsafe, since most of you seem to be able to understand what hack is to be used by your JTAG this bug has been around for a very long time xD (i accidently set the SMC hack when changed to the variable storing Mobo... woops?!)
+- Fixed: When manually editing settings for Dashlaunch (going back and forth between the manual edit tab and the others) it'll now properly update the information shown ;)
+
+*********
+* 2.087 *
+*********
+- Fixed: No longer enforcing RGH 1.0 for trinity, please beware that ECC creation might not work with the RGH 2.0 script, however the RGH 1.x script works perfectly with any trinity version to date (except for 15572+ updated machines of course!)
+- Updated: Now using xeBuild 1.06
+- Updated: Now using Dashlaunch 3.05
+- Updated: Now building 2.0.16202.0
+- Updated: XML's have been updated like ussual with the location and MD5 hash of the new update files...
+- Added: I've now written a full tutorial on how to use this GUI to update your JTAG/RGH Console, you can find it here: http://xebuildtut.xeupd.com it's also linked by the "Tutorial" menu item in the GUI :) (it'll open in your default webbrowser)
+
+*********
+* 2.086 *
+*********
+- Removed: No additional checks are made for additional patches (apart from NOHDMI patch, which can really only be applied to any motherboard apart from xenon anyways) this should fix errors here...
+- Fixed: Finally fixed that display bug with Xell icon not beeing shown properly for RGH 2.0...
+- Fixed: F*ing jasper failsafe keeps beeing gay... >_< fixed now... once and for all!
+- Updated: Now using Dashlaunch 3.04
+- Updated: The system update xml have been updated with the new location for the 16197 update (since it was verified to be final we've moved it to the regular folder rather then beta)
+
+** NOTE: Many minor fixes has been done lately, and NO this release does NOT support corona v2, despite what news sites states since last update... it'll be fully supported in v3.0, but i don't really feel like updating 2.0 aswell with this shit... i added failsafe disable so pro's can still be lazy (like myself) **
+** NOTE: If anyone of you complain about minor shit that is useless and/or having to wait for 3.0 for proper support for everything, go make your own tool, i do this for free and release my full source... meaning you have everything you need to make your own tool... 
+
+*********
+* 2.085 *
+*********
+- Updated: Now using xeBuild 1.05 - Final
+- Updated: Now using Dashlaunch 3.03
+- Updated: Now building 2.0.16197.0
+
+*********
+* 2.084 *
+*********
+- Fixed: FCRT.bin can now be extracted properly (never did work, why nobody noticed it before i have no idea... xD)
+- Added: You can disable the failsafes now, this allows you to build corona nands using the GUI... it's STILL not able to handle a proper v2 nand (it don't know how to read a nand without spare) however, xeBuild does
+- Changed: Updated xeBuild to the new beta...
+** NOTE: This is just a quick fix, i'm still working hard on xeBuild GUI v3.0, it have all of these fixes and much much more... stay tuned for more information on your my official release site: www.homebrew-connection.org :) **
+
+*********
+* 2.083 *
+*********
+- Fixed: The app will now write your nand properly when you tell it to write a full nand image...
+- Added: The app now makes sounds when it's done with building images and/or doing nandpro stuff ;)
+- Changed: Some code cleanup, removed stuff that wasn't used/not needed...
+
+** NOTE: This version isn't publicly released to everyone due to small ammount of fixes that aren't really useful to most... **
+
+*********
+* 2.082 *
+*********
+- Fixed: The patch to disable FCRT.bin is now also beeing used on corona... i forgot to remove a limitation i added before... woopsie!
+- Fixed: You'll nolonger be warned about bad motherboard choice when using bigblock machines, sorry about that...
+
+** NOTE: Expect few more of these mini versions... fixes... the bug with nofcrt is considerd "vital" to me thus i release a new version ;) **
+
+*********
+* 2.081 *
+*********
+- Fixed: When searching for your console on the network (for xell) it'll no longer spit out errors everytime it finds a computer but fails to download fuses (it'll no longer tell you it can't decrypt kv when this happens)
+- Fixed: The RGH 2.0 script has been updated with new patches that actually work for corona ;)
+- Fixed: Replaced CBB_13121.bin in the ECC folders to a proper one, BIG Thanks to Marchisio80 for telling me about this!
+- Added: Included in the pack is now also a retail SMC for corona
+- Fixed: Now using proper corona SMC when building retail images...
+- Fixed: When building a image from scratch (extract vitals) with corona it'll now attempt to extract FCRT.bin aswell
+- Fixed: If you have selected ECC for RGH 2.0 it'll now also switch to Freeboot for RGH 2.0 when you load cpukey using any method...
+
+** NOTE: Netheir this nor the previous release (2.08) supports hacking a console with 15574! what it can do is however decrypt the data from 15574 nand IF you have your cpukey at hand... this means you MAY be able to rebuild a nand for your console with older version despite updating... but i make no promises! **
+** NOTE: The corona support ONLY works for v1 (16MB NAND machines, this generally means consoles with harddrives...) **
+** NOTE: Xell isn't fully operational on Corona, all you can use it for is to extract your CPUKey and/or dump your nand (maybe, i haven't tested dumping nand) this however is ONLY possible using network! you get no image...**
+** WARNING: Don't try to flash your nand using rawflash OR xell on a corona motherboard, it WILL NOT WORK, to flash your motherboard use an old version of nandpro or the squirter software... **
+
+** NOTE: This version is crap, just like the previous version, it works... but it has alot of errors still in it, and i'm working on a totally new version, 3.0... it's a total re-write to fix alot of errors and add new features... check on www.homebrew-connection.org every now and then and you won't miss the release ;) **
+
+********
+* 2.08 *
+********
+- Added: The app now supports identifying Corona motherboards and you can now also choose to build such images if you want...
+- Changed: Replaced the RGH 2.0 build.py with the one made by TX RGH Team which someone leaked, i've slightly modified it tho like previous script ;)
+- Removed: You can no longer select Jasper256/Jasper512 seperatly, sorry... but they didn't fit anymore when i added Corona, and JasperBB is the same anyways ;)
+- Added: The app can now handle the new CB_B decryption, so you can extract information CB_B from a 1557x and newer dump along with extracting these bootloaders decrypted
+- Fixed: Several minor bugs from adding JasperBB, forgot to add jasperbb in the restrictions to jasper256/512 :$ sorry!
+- Fixed: When reading the wrong file as "fuse" you'll nolonger end up with a key that is "00..." it'll instead set key as empty (none) ;)
+- Changed: Now using xeBuild 1.04
+
+** NOTE: I did not intend to release another version of xeBuild GUI untill 3.0 was done, but seeing as Team Squirt and Blakcat (author behind AutoGG) decided it's a great idea to release the corona hack NOW they kinda forced my hand... **
+** NOTE: I've taken parts of the new 3.0 code and implemented it in this version, there is still alot of work left to be done in 3.0 before it's ready for release... **
+
+**********
+* 2.071b *
+**********
+- Fixed: Replaced xeBuild with proper one, must've hit wrong button when i was fixing up the release package, accidently used one of the beta's :$
+
+*********
+* 2.071 *
+*********
+- Fixed: When selecting "Current" for Gameregion you'll nolonger get an error from xebuild...
+- Fixed: There was a line to much in the retail.ini for 15574 from xeBuild, i've fixed it here ;) (it works etheir way but...)
+
+********
+* 2.07 *
+********
+- Fixed: Freezing with some rare images when the program is trying to check CB etc.
+- Fixed: The application is now able to read files directly from optical units aswell (such as CD's and DVD's) NOTE: This may cause the program to freeze for a bit due to slow read speed...
+- Fixed: The SMC Failsafe will now properly use the settings you select instead of just asking you...
+- Added: Motherboard type "Jasper BB" this can be used if you are not sure if you have a 256MB or 512MB jasper, this is also autoselected if the app can't decide wether you have 256 or 512mb jasper
+- Updated: Now using xeBuild 1.03
+- Updated: Now using Dashlaunch 3.02
+- Updated: Default build version is now 15574 (and of course support for building this kernel version is now added aswell)
+- Changed: No longer including a Dashlaunch beta...
+- Fixed: If you don't have CF/CG in the per versions folder but instead in the commons folder the app will no longer complain about not finding it ;)
+- Added: Before building a new image the old verbose xeBuild log will be deleted to eliminate confusion :)
+- Changed: New icons and a new logo for the app thanks to Aioros!
+- Added: Support for the new options for xeBuild (disabling the eject button and/or disabling the center LED on the ROL from blinking)
+- Changed: Re-designed the xeBuild Options tab, moved some stuff around to make more space for the new options
+- Changed: Re-named "Cygnos UART" to "Set UART Speed for Cygnos"
+- Changed: Moved the cygnos option from JTAG only to misc options since it's compatible with both JTAG and Glitch (basically anything that isn't retail)
+- Added: Option for setting UART speed for TX Demon (Team Xecuter Demon) (NOTE: This does exactly the same thing as the cygnos option at this time)
+- Fixed: If FUSE.txt already exist next to your dump the app will now ask if you want to overwrite it, if you say no it'll simply stay where it was downloaded to, and you'll be told where that is...
+- Removed: Cleaned up src a little, removing unused shit that i was starting to work on but never got finnished untill i got the brilliant idea of re-writing the whole thing :)
+- Fixed: several minor/annoying errors/bugs, thanks to _n3o_ :)
+
+** NOTE: LDV is no longer required for Glitch type images! :D **
+
+** NOTE: This will be the last update for xeBuild GUI 2.xx series unless someone finds a critical bug somewhere... i'll be working on xeBuild GUI 3.0 for a while following this release... hopefully it'll be an awesome update! **
+
+*********
+* 2.061 *
+*********
+- Fixed: The failsafe now properly warns if you are trying to build something funky like JTAG from Glitch type source etc.
+- Fixed: You can now properly build nands without using a full dump again, forgot to think about linking some files in 2.05x... fixed already in 2.06 but didn't update changelog for that last minute changes...
+- Fixed: You can now build 7371 retail and 9199 JTAG images, that function was broken in previous versions...
+- Fixed: If you don't select a dashboard version it'll no longer allow you to try to build (if it's required for the type you are trying to build), it'll now have the build button disabled...
+- Fixed: You can no longer select any hacked SMC type for retail (previously you could select aud_clamp and aud_clamp + eject altought it would automatically change that to current/retail with the failsafe)
+- Changed: The log now contains the latest entry in the top rather then at the bottom...
+
+********
+* 2.06 *
+********
+- Fixed: Several bugs in the nandpro window again... Hopefully last time i fix bugs here before next major re-write
+- Added: The app can now tell you about values in your SMC Config (for refference if you want to change these values) for example the Temperatures, fanspeed, MAC Adress etc.
+- Added: New options to Dashlaunch ini configurator to reflect the new stuff in the new dashlaunch BETA version :)
+- Changed: Now using latest Dashlaunch BETA (v3.01 BETA)
+- Updated: I've updated all presets to the standards of 3.01 and updated the launch.ini included with my suggestions for 3.01 Beta
+
+*********
+* 2.052 *
+*********
+- Fixed: Crashing when right after telling you it can't find the nandpro version you were trying to use...
+- Fixed: Will now wait for nandpro to exit before saying it's done with ECC/NANDFlashing etc. and not just when dumping the nand...
+- Fixed: Crashing when trying to load setting screen after dumping less then 4 times... it'll now try to fill in the data possible and the rest will be ignored...
+- Fixed: Selecting ECC (RGH 1.x) now enables the generate button properly, i really really really need to start looking closer at the code before release, don't i?!
+
+*********
+* 2.051 *
+*********
+- Fixed: Forgot to make sure it copies xell for the new RGH 2.0 type Freeboot, minor adjustment and it now works the way it should ;)
+- Fixed: Patching of RGH 2.0 SMC is also fixed now... DAMNIT! i need to start checking more closely :$
+
+********
+* 2.05 *
+********
+- Fixed: I've fixed several errors in the nandpro operations causing crashes and/or causing nandpro to trigger errors on commandline
+- Added: When closing the IPScanner window it'll automatically save the settings you used last time to %appdata%\Swizzy\xeBuild\ipscan.cfg this file will then be loaded upon opening it again...
+- Added: Support for extracting FCRT.bin from trinity nand's (Thanks BestPig for the source!)
+- Changed: You can now see what mode you are running in (i've moved the modeswitch out from tools)
+- Added: Crashlog, if for whatever reason there is an unhandled exception that occurs you'll be presented with a message and it'll hopefully save a crashlog.txt which will contain the information i might need to fix the bug... if for whatever reason it cannot even produce the crashlog you'll get a message about that aswell before the program closes itself...
+- Changed: Rewritten ALOT of nand related functions (how it reads your nand, this means it MAY be a little bit slower when loading a bigblock nand, but it'll also make it easier for me to implement functions i'm working on when i get it all working... and it'll make it easier for those whom use my source to learn this kind of stuff, i really do hope someone tries to learn from it...)
+- Updated: Added support for identifying CB's: 4575, 4577, 5772, 5773, 6752, 6753
+- Added: Support for building ECC and Freeboot type images for RGH 2.0
+** NOTE: I've modified the ECC script for RGH 2.0 a little adding a few things and changing some paths aswell as fixing the bug TX had in their script (a minor typo, i had already modified the script and fixed it instead of replacing it) **
+- Changed: Re-arranged build type a little and renamed all of them the list is now as follows:
+ * Freeboot (JTAG) - This type is meant for JTAG consoles to build Freeboot images.
+ * Freeboot (RGH 1.x) - This type is meant for RGH consoles to build Freeboot images for Glitch type consoles, same as GGBoot/Glitchboot
+ * Freeboot (RGH 2.0) This type is meant for RGH 2.0 Consoles, to build freeboot images for the new type of Glitch consoles
+ * ECC (RGH 1.x) - This type is meant for RGH consoles to build ECC type images (Xell) for Glitch type Console
+ * ECC (RGH 2.0) - This type is meant for RGH 2.0 console to build ECC type images (Xell) for the new type of Glitch consoles
+ * Retail (Stock) - This type is to build original images, non-hacked images, NOTE: These images will NOT be live safe!
+ * Devkit - This type is meant for building Devkit images for devkit consoles, NOTE: Read the readme for more information on this...
+- Changed: Updated links in dashfiles.xml, added 7371 and re-arranged the types as follows:
+ * Type = 1 - Retail only (used by: 7371)
+ * Type = 2 - JTAG only (used by: 9199, 12611, 12625 and 13146)
+ * Type = 3 - Retail, JTAG and Glitch only (used by: 13599, 13604 and 14699)
+ * Type = 4 - Retail, JTAG, Glitch and Glitch 2 only + Activation of the 3 new special patches (nohdd, notrimnu and nohdmiwait) (used by: 14717 and 14719)
+ * Type = 5 - Devkit (used by: none, reserved for custom versions if you want to build devkit images and want to have it in the drop down list)
+- Fixed: The app will now auto select output folder upon auto loading flashdmp.bin from app directory
+- Fixed: Several minor bugs/errors a little bit everywhere...
+- Added: When NANDPro is running there will be a circle that rolls around in the nandpro operations window to indicate that it's working...
+- Added: When building ECC for RGH 2.0 you can specify a custom 1blkey and/or make it use a CPUKey, this is possible due to a minor mod of the build.py script by Team-Xecuter (i've made the mod myself)
+- Added: 3 new patches: nohdmiwait, notrinmu and nohdd nohdmiwait makes the console boot without waiting for HDMI handshake, notrinmu disables onboard memory unit on trinity, nohdd is rather obvious what it does no? anyways, it disables the harddrive...
+- Changed: Moved custom ini/patch to xeBuild settings due to more special patches beeing added...
+- Changed: Re-written how the downloader does with dashfiles, it now downloads a systemupdate PIRS file instead of all files extracted, this way it's much faster and much easier... (this is a new feature in xeBuild that reads this kind of file for dashboard files)
+- Added: Tool to check versions of a nand (Bootloader versions, LDV, Pairing data etc. similar to 360 Flash Dump Tool or J-Runner) this feature is really only useful for advanced users and in rare cases...
+- Added: Tool to extract parts of a nand (such as: KV, SMC, SMC_Config, FCRT.bin and some bootloaders) useful if you want to use files from a donor nand (NOTE: This feature is limited to advanced mode only)
+- Added: External tool to edit the updates and dashfiles xml files with the correct format, meaning you can use this to change md5 and links etc. you can also add new entries if needed...
+- Added: Dashlaunch ini editor, i've moved the old one (tab on the right side -> if you activated advanced mode) to it's own window instead to keep it as a "tool"
+- Removed: Dashlaunch tab, it's now in a new window...
+- Updated: Dashlaunch ini editor contains all the options which are in xeBuild 3.0 BETA
+- Added: You can select wether to use DL 3.0 BETA or 2.32 (check the "BETA" box next to include dashlaunch and it'll use the beta version instead of 2.32...)
+- Updated: Now using xeBuild 1.02
+- Changed: Default build version is now 14719 due to Glitch 2 support only beeing possible for 14717+ dashboards
+- Added: When you don't have the dashfiles present for the dashboard verison you are trying to build the app will try to download it for you
+- Added: If the file "su20076000_00000000" exists in the directory for the version you are trying to build it'll do a quick verification that it's the correct version and such, it'll warn you if it finds any error along the check, and also if the version don't match...
+- Added: Information about where to get official updates/news about this GUI, visit: www.homebrew-connection.org if you want the latest news about the gui...
+
+*** There are probably lot's and lot's more changes i've made that you'll find that i've simply forgotten to write down, but hell, it's a huge list already! ;) ***
+*** NOTE: I've only been able to test RGH 2.0 images on 1 falcon, however the xeBuild team has tested their images aswell with success, otherwise they wouldn't have released it... the GUI ones SHOULD work just fine, but it may always be an error somewhere that nobody has seen yet ***
+
+********
+* 2.04 *
+********
+- Fixed: Now properly using new xell-reloaded, my mind apparently lied to me and said i had swapped the files in the perm directory, but i apparently only did it in the temporary directory, sorry!
+- Added: The app can now also identify CB 1940 as Xenon and will ask you if you want to use CB 7375 for ECC creation
+- Updated: Using nitram's new fixed script (previous one didn't like using external CB 7375 nor did it like using CB 1940 it also has CB 6750 problem fixed, so if you have a 6751 CB it'll now be able to build ECC's for that again!)
+- Fixed: Error messages are no longer written in the middle of the normal output, it's written at the end like it should be (from python)
+- Updated: You can now also build Glitch type freeboot images for xenon :)
+** NOTE: This will use CB 1940, if you want to use a different CB version you'll have to manually edit the glitch.ini with both new version to use AND the CRC value, aswell as add the new CB file... **
+- Changed: Changed the label of GGBoot/Glitchboot, it's now more obvious for Glitch type users that this is the option they will want to use, it now says "GGBoot (Freeboot for glitch)"
+- Added: I can now extract SMC_config on my own (Thanks to RF1911 and cOz)
+- Removed: The debug window no longer exists... if you need to check the KV/SMC data in HEX use a hex editor! ;)
+- Added: Several more easter eggs, go find them! :D
+- Fixed: Forgot to add function to the flash nand button! WOOPS! it now works the way it should ;) (NOTE: this will erase the first 50 blocks then write if the total size is more then 50 blocks)
+- Fixed: Several bugs/errors in the nandpro operations window
+- Added: You can now make presets for the nandpro operations window, meaning if you don't like my defaults you can set your own (it'll autoload "nandpro.xml" if it exists in the main directory)
+- Added: NANDPro operations is now linked to the rest of the app, so everything you do here will be effecing the result aswell, for example, when you build a ECC or BIN
+- Changed: Rebuilt NANDPro operations, default settings (which are no longer visuable in the main window) is set to use USB as device and nandpro 3.0a for nandpro version (unless you've put nandpro.xml in the main directory)
+- Changed: Nandpro operations is now available to everyone (it is no longer restricted to advanced mode)
+- Added: IP Scanner, this feature allows you to scan for your console on your network, useful if you can't see your IP or is just lazy... it only checks a range which is user specified (default is 10 - 100)
+- Changed: The nandpro operations window has been rearranged a little, and i've removed some controls and placed them on the settings screen only (those that aren't commonly changed)
+- Changed: FUSE.txt is no longer downloaded to Main application directory, instead it's downloaded to a temporary directory and copied to the same directory as your source nand is located in (if it's specified, otherwise it'll ONLY be in the temporary directory: files\temp\ beware that this folder is REMOVED upon completing the build process)
+
+** NOTE: I haven't been able to test everything with Xenon's yet, but it should work just fine, i've tested building images but haven't been able to test the resulting images to make sure that it works properly... **
+
+********
+* 2.03 *
+********
+- Changed: The app no longer requires .net framework 3.5, it now only requies v2.0 :)
+- Fixed: When running a different build after running glitch type the app will no longer keep the "-o patchsmc" option as an argument to xebuild
+- Fixed: More typo's where i've missed adding spaces between various xeBuild parameter options (this time it's with verbose output, maybe more... fixed properly this time!)
+- Fixed: The app now properly copies custom smc to data directory...
+- Fixed: Unpacking of sysmteupdates is now done properly again to the usb devices instead of to a folder with the letter of the drive...
+- Added: Nandpro features, the GUI is now able to do various common NANDpro operations such as dumping your nand, writing a hacked image, writing a ECC image, it can also do file operations such as writing ECC to an existing Dump or remapping badblocks (NOTE: you have to write the blocks in HEX and you need to manually select what block to remap to where...)
+** NOTE: When using 3.0a you'll get NO output if there is no device connected, Flash CPLD ONLY use 3.0a so don't bother trying to use Custom... Custom means it'll use "nandprocustom.exe" in files\nandpro\ otherwise it'll use the specified version (selected one) **
+** NOTE: DO NOT remove nandpro20b.exe even if it's not used anywhere visuabaly (it's the version i use to do file operations meaning you will KILL the function if you remove this version, or replace it...) **
+** NOTE: This is limited to advanced mode, it shouldn't be used by ppl that don't know what they're doing as there is no status updates along the way you won't know what's happening untill it's finnished **
+- Added: If you put "smc_config.bin" or "kv.bin" next to the app they'll now be used instead of your full nand by default, making it easier for you to fix broken nands
+- Updated: Now using the same Xell-Reloaded version for ECC and xeBuild (v0.991)
+- Changed: If there is a log next to the gui it'll automatically assume you've already created a ECC and thus want to create a xeBuild image (ggboot/glitchboot) (NOTE: it looks for "xeBuild_GUI.log" and/or "xeBuild_GUI.txt")
+- Changed: If you grab cpukey from keys.txt, fuse.txt or network it'll also assume you want to create a Glitch image (if ECC was previously selected)
+- Fixed: If you are currently running a process (building an image) you cannot begin another one (the generate button is disabled untill it's finnished)
+- Changed: There has been ALOT of changes in the source code, to improve the readability along with optimizing parts of the code to work a little faster and/or use a less ram, this isn't very important for most of you, but it's a big change ;)
+- Fixed: When there is an error the app will no longer assume it's an xeBuild error... (it will if xeBuild is used, otherwise it won't)
+- Added: The output log now contains information aquired from your decrypted keyvault (serial, osig, mfr-date etc. all of the data it shows you when you click on check KV)
+- Added: The output log also prints CB version (if possible)
+- Changed: You can now choose to ONLY use extracted files (thus NOT using a previous nand dump) NOTE: This is NOT recomended and should ONLY be used if you have no other options...
+- Updated: The app can now identify CB versions: 9230, 7375 and 1923 other versions may work fine aswell, but will NOT be identified automatically by the app...
+- Updated: You can now build ECC type images for updated Slims (if they have CB 9230) you can also build ECC type images for Xenon... Thanks for releasing an updated build script nitram! :D
+
+********
+* 2.02 *
+********
+- Fixed: You can now choose to change your CFLDV and use the nofcrt.bin check patch at the same time... (there was a typo previously)
+- Added: Argument/Parameter editor to keep such errors as this from happening again (NOTE: Limited to advanced mode to keep noobs away from killing consoles by editing without knowing what they're doing!)
+- Fixed: When building multipile images without exiting the program you'll no longer get multipile entries of "-o cfldv=xx" on the command sent to xebuild...
+- Added: Option to extract vital files (kv.bin, smc.bin and smc_config.bin), this will extract these files instead of copying your nand to the data directory (only available when making xeBuild images)
+** NOTE: This feature is limited to advanced mode and you will need to manually remap the resulting nand! it'll first check for previously extracted files before doing this (it won't overwrite already existing files), and upon completion it'll delete them...**
+** NOTE: At this time i'm unable to extract smc_config.bin, so for now it'll only check if it exists (use 360 flash dump tool to extract it!) **
+- Changed: The generate button is now disabled upon clicking it, thus not allowing you to run 2 operations at the same time, if you forgot to change something please WAIT!! (or you'll have a mixed/messy log and the app may crash when it's complete...)
+- Changed: The dashfiles check is now done first thing after you've pressed the generate button, thus not creating a debuglog which is useless
+- Changed: Reverted back to Logic-Sunrise as download server and default build version is now 14699
+- Updated: Now using Dashlaunch 2.32
+
+********
+* 2.01 *
+********
+- Fixed: Updated the hardcoded MD5 hashes for critical files that were included at release, forgot to update those prior to 2.0 FINAL release :$
+- Updated: Dashfiles.xml now also includes 14717 dashfiles link and MD5 hash, they weren't uploaded prior to release, thus i couldn't link to them ;)
+- Fixed: The app would crash when trying to copy stuff from Manual tab in xeBuild (or paste, or anything else like that) not anymore ;)
+- Changed: CFLDV is now included every time you build a non-ECC nand image (Retail, Glitch, Freeboot, Devkit) if you've entered it manually...
+- Fixed: The SMC Failsafe should no longer force you to answer stupid questions about what SMC to use (if you've already selected it)
+- Fixed: You can now properly select if you want to use Simple or Advanced mode when autostarting or loading settings...
+- Fixed: The app now loads options.ini properly, and if it exists next to the executable it'll also load it properly as if you had pressed the button to load it...
+** NOTE: If this file exists it both implies that you are an advanced user and want to use these settings, thus it'll automatically use these settings for you... **
+- Added: The app now loads launch.ini aswell instead of just using it...
+- Changed: When saving settings the app will now default to "default.xml" and the App directory, allowing you to quickly select alot of presets that you want it to have when loading the app :)
+- Fixed: I've fixed the ini's for 14717 so they are proper now...
+- Changed: The debug log that is created when there is an error with the build process (after running throught all the failsafes) will now also include xebuild's verbose log...
+- Changed: 14719 is now also included! :)
+- Changed: Dashlaunch 2.31 is now the used version...
+- Fixed: Bug with xeBuild Custom settings, i was apparently tired when i made that functions :p fanspeed?! there is no such setting, it's gpufan/cpufan!
+- Changed: I'm no longer downloading files from logic-sunrise, instead i've got a dedicated host for all files (giving me more control!)
+
+*************
+* 2.0 FINAL *
+*************
+- Fixed: There was a minor error with my new Fuse parsing, in some cases it would skip some 0's not anymore ;)
+- Changed: You can now select seperate names for bin/ecc, previous configurations can still be loaded (and will be checked if it's .bin or .ecc and write the names into the appropiate place)
+- Added: Failsafe for motherboard choices, if you select a motherboard that doesn't match the suggestion from the app it'll warn you about it, and ask if you want to correct it (use suggestion) or if you want to continue...
+** NOTE: If it cannot determine what motherboard to suggest it'll just ignore it as it can't really check anything ;) **
+- Added: Failsafe for image type, it'll check if ecc/glitch/freeboot is the appropiate image type for your motherboard (based on CB) if it can't check it'll ignore it (same as motherboard)
+- Fixed: The app no longer tells you that the input is to short whiles you are writing the cpukey...
+- Fixed: The app can now build retail images even if you don't have a SMC.bin file in the root directory of the app :)
+- Fixed: The app no longer includes Dashlaunch when NOT building Glitch/JTAG images...
+- Added: You now have a option to use Current SMC (meaning the app will not replace it, useful if you don't know what you should use or just don't want to replace it)
+** NOTE: You'll need to select Current/Retail SMC if your SMC is patched, otherwise it won't work... **
+- Changed: Building Retail/Devkit images now also requires you to choose Current/Retail SMC in order to be valid
+- Fixed: The app no longer crashes when trying to download an invalid link (it'll tell you there was an error whiles trying to initalize the download)
+- Fixed: If your download fails when downloading dashfiles the app will no longer try to install after download (as it has failed!)
+- Changed: The app now uses Dashlaunch 2.30
+- Added: New options available since Dashlaunch 2.30 :)
+- Changed: The app now includes files for creating 2.0.14717.0
+- Changed: The app now uses xeBuild 1.01 along with all of the new patches...
+- Fixed: Minor bugs a little bit here and there, none really fatal/worth mentioning (most are basicly things i missed adding in for certain parts of the automation stuff)
+- Added: Xell Failsafe, it'll automatically change Xell to Xell-reloaded if you've selected custom and it cannot find the file, it'll also do the same if you've previously selected JTAG type (unlocking Xell and Xellous) and having it fixed to Glitch type
+- Added: SMC Failsafe when selecting JTAG (Freeboot), this will ask you what SMC you want to use, if you select JTAG (Freeboot) first then change it during earlier failsafes it'll set it to current automatically... (this feature also allows you to change the settings by spamming you with questions untill you answer yes to any question...)
+- Changed: The app now uses Xell-Reloaded built 2012-02-19 (v0.991)
+
+***********
+* 2.0 RC3 *
+***********
+- Added: MAC Adress Generator, the app can now generate a MAC Adress for you with the press of a button :)
+- Fixed: When loading a options.ini the app now properly uses ALL information (previously i had missed adding in the function to select boot buttons (xellbutton, xellbutton2 and dualboot)
+- Changed: The color is now slightly lighter to make it possible for you to see the |'s in the fanbar :) and both the statusbar and the top menu now have the same color as the rest of the application for them to blend in a little bit more :)
+- Fixed: If using custom SMC the app will now properly check if it's Retail or Glitch patched aswell (when building glitch images)
+- Fixed: The app will no longer mention using default dashlaunch settings if you told it NOT to include dashlaunch... (if however there is a launch.ini since before it'll be removed, and you'll be notified of it)
+- Fixed: Some messages are now a bit more clear as to what i actually meant with them (Mainly errors/warnings)
+- Added: Some more messages to let you know what the app is doing, altought you will see all of these new ones on the parameters sent to xeBuild (if you know how it should look like)
+- Changed: The app will no longer say "Unkown" when it cannot make any sense of what SMC to suggest for you, instead it'll say "N/A" as it cannot suggest anything for you... (This should only be shown when dealing with a retail nand, and you should know for yourself what SMC to use, unless of course you are building a glitch image, in which case you'll not need to choose a SMC at all ;))
+- Added: The app now also selects SMC for you, apparently missed that part when i was working on the app earlier, been working mostly with Glitch machines (with testing and all that, thus i haven't noticed this error untill now)
+- Changed: If you have autoselect on when you load a nand, or check it you will now be forced to manually select what motherboard/SMC to use if it cannot determine which one you should use
+** NOTE: It'll select Custom SMC for you IF that file exists upon failing the check **
+- Changed: You can no longer save an empty log, the button is completly disabled :)
+- Fixed: Now the app checks your CPUKey/1BLKey prior to activating the Generate button
+
+***********
+* 2.0 RC2 *
+***********
+- Fixed: When re-loading settings it now properly set advanced mode, like it should...
+- Fixed: I forgot to pack the ECC files prior to releasing 2.0 RC1, they are now included properly, sorry about that one...
+** NOTE: as some of your may have noticed in previous build/this build there are some spaces where there is nothing, well there is... they're just hidden for the time beeing as i've prepared the GUI for upcomming features in next xeBuild ;) **
+
+***********
+* 2.0 RC1 *
+***********
+- Changed: Completly rebuilt the app from scratch, the old code base became one big mess hard to keep track of, and update, with the new codebase also comes a completly rebuilt GUI the new version includes dual mode, Simple/Advanced and quite alot of new features along with a couple of easter eggs ;)
+- Changed: CPUKey/1BLKey/DVDKey only supports hexadecimal input (A-F, a-f and 0-9) aswell as backspace/delete (it'll catch what you type when you do so with your keyboard, copy 'n' paste will allow you to fill in whatever, but only 32 characters of it NOTE: there is a secondary check aswell, so you cannot input anything else then a "proper" key no matter what ;)
+- Removed: Patch SMC setting, it's not needed and can confuse you (it was automaticly used for glitch machines if your smc is a retail one even if you haven't selected it anyways, making it a useless option to have)
+- Added: Option to also include any harddrive that windows calls "Fixed" harddrive (Non-Removable device) for the update downloader...
+- Added: Information if the device is shown as Removable or Non-Removable by windows for the update downloader...
+- Changed: True/False on MD5 matches is now displayed in bold and color formatet (Green for True and Red for false) to make it easier to see the results :)
+- Changed: "Type of image" is now "Build type" to make it easier to understand that this will be output image type ;)
+- Fixed: Update downloader now works properly, dunno how it slipped by, but i had set it to remove the first 2 characters of the drive string (when unpacking the update), meaning the important parts, fixed now tho ;)
+- Changed: The app now dynamically add Dashboard versions based on dashfiles.xml, etheir the one located with the app or one that has been downloaded to %appdata%\Swizzy\xeBuild_GUI\
+- Changed: Moved most download features to a tab on the right hand side of the program among these is the update downloader...
+- Added: Keyvault dumping/decryption, thanks to LegendaryFire for his NandApi source!
+- Added: I've added support for canceling downloads, the app will no longer crash when you close the program whiles it's downloading something...
+- Added: You can now select if you want to have verbose output from xeBuild rather then having minimum (this will cause the log to be full of information) 
+** NOTE: Verbose output from xeBuild is only available in Advanced mode... **
+- Fixed: The app no longer overwrites an already existing log, it'll read the old log and put it infront of the old one...
+- Changed: i've rewritten the warning messages about formatting your drive along with adding an extra check just to make sure you don't automaticly click yes as this WILL remove ANY data you have on the device!
+- Fixed: When formatting a usb drive using the avatar updater it will no longer lock the drive, it will however clear any label you have on it...
+- Added: Support for building ECC images aswell, this disables ALL options except for those related to the app itself and of course motherboard/type, if you need to use CDjasper, just select jasper, otherwise select which ever one you like that isn't disabled ;) NOTE: i have made NO modifications to the build.py script (apart from adding 1BLKey) so it should work to switch it out at a later time without problems, but do remember to copy over the 1blkey if it's needed ;))
+** NOTE: If your Jasper has CB 6751 it'll automatically enforce using a donor CB 6750 **
+- Added: Semi automatic selection, if you are doing an upgrade the app will now automaticly select all the options for you when you select source nand (it cannot select JasperSB(if 16mb dump) or Jasper256/Jasper512(if 66mb dump))
+** NOTE: You can disable this feature if you like, but this requires that you first start the progam without loading any nand! OR manually editing the default.xml file**
+- Added: The app can (and will if the files are missing) download and install dashfiles for you meaning even if the files aren't with the release it can download them for you if you have internet and you don't have to look for them yourself! :D
+** NOTE: It won't start the download on it's own, just prompt you to do it ;) **
+- Changed: When checking the motherboard version etc. it'll now tell you what type of jasper you have
+- Changed: Jasper 16Mb SB is now limited to advanced to make it easier for newbies to understand it's for advanced users if you have a machine that requires this you should know about it already, thus be a more advanced user ;)
+- Changed: Updated launch.ini to reflect changes in new dashlaunch...
+- Changed: CPUKey is now grabbed the same way the console does from fuses :)
+- Changed: When reading cpukey.txt it reads the last 32 characters of the first line if it starts with "CPUKey" or the 32 first characters in all other cases
+- Added: The gui now checks the exitcode of xeBuild to instead of checking for output, if it gives an error of any kind it'll tell you what it probably is...
+- Added: The app can now generate launch.ini for you (NOTE: This feature is limited to advanced mode)
+- Changed: The app now use dashlaunch 2.29
+- Removed: The app now accepts ANY value for temperature tresholds; BEWARE! i take NO responsibility for damage on your console due to bad settings, the feature of customizing xeBuild settings is limited to Advanced mode because you should really know what you are doing before you go about changing stuff here!
+- Added: 7zip is now Embedded in the app making it ALOT harder for you to mess with the parts that deal with downloading/unpacking zip/rar files
+
+-=*=- There are probably more changes i've done that i can't think of right now, consider them easter eggs ;) -=*=-
+
+*******
+* 1.1 *
+*******
+- Added: Function to prepare a USB memory stick for updating your console with the AVATAR support (Update downloader)
+- Fixed: Copying of Cygnos360 V2 SMC now works...
+- Fixed: Some Xenon SMC's didn't show previous hack properly... works now :D
+- Fixed: Sometimes the app will recognise your SMC as Cygnos whiles it's JTAG, the app will now show you it's JTAG if it can see that it's JTAG patched aswell instead of fooling you by saying it's a cygnos 360 patch...
+- Changed: The app no longer asks if you want to clear the log after autosaving, instead it asks if you want to Close the app, Clear the log or just leave the way it is :)
+- Added: Reading cpukey/ldv from fuse.txt or downloading it from xell now also saves both CPUKey and DVDKey (if available) to keys.txt :)
+
+********
+* 1.0b *
+********
+- Fixed: XP Compatibilty issues causing the app to crash as it can't find the files it requires due to XP beeing generally gay when it comes to directory shit >_< (i thought i had found all of them, but apparently some little buggers passed by me prior to release :(
+- Fixed: Already open windows will not automaticly be brought to the front so you can see them :)
+- Fixed: Selecting Glitch/Trinity then selecing JTAG/Xenon will no longer cause the Xell section to be de-selected randomly :)
+- Added: Failsafes in custom options, you can no longer set your MAX temp lower then your running temperatures! and you can also not set max/running temp without setting the other option aswell...
+- Added: Check if you have selected the same Xell/Dualboot button twice (excludes not setting it of course)
+
+*******
+* 1.0 *
+*******
+- Initial release
+- Dashlaunch 2.27 is the version included with this release
+- xeBuild 1.0 is the version used with this release
+- This version supports building the following Dashboard versions:
+   - 2.0.7371.0 - Retail images ONLY
+   - 2.0.9199.0 - JTAG images ONLY
+   - 2.0.12611.0 - JTAG images ONLY
+   - 2.0.12625.0 - JTAG images ONLY
+   - 2.0.13146.0 - JTAG images ONLY
+   - 2.0.13599.0 - JTAG, Retail and Glitch images
+   - 2.0.13604.0 - JTAG, Retail and Glitch images
+   - 2.0.14699.0 - JTAG, Retail and Glitch images 
+   * Files for 2.0.14699.0 are included *

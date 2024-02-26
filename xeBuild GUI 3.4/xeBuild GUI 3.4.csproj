@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{96CFC786-18D4-4F81-A9F7-B13562B689E7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>xeBuild_GUI</RootNamespace>
+    <AssemblyName>xeBuild GUI 3.4</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Function Classes\BadBlock.cs" />
+    <Compile Include="Classes\Function Classes\Nand.cs" />
+    <Compile Include="Classes\Function Classes\Oper.cs" />
+    <Compile Include="Classes\Function Classes\variables.cs" />
+    <Compile Include="Forms\PictureViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PictureViewer.Designer.cs">
+      <DependentUpon>PictureViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NandMMC\ComboBoxItem.cs" />
+    <Compile Include="NandMMC\nandMMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NandMMC\nandMMC.Designer.cs">
+      <DependentUpon>nandMMC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NandMMC\LoadingCircle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NandMMC\LoadingCircle.designer.cs">
+      <DependentUpon>LoadingCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NandMMC\ThreadSafeButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NandMMC\ThreadSafeButton.designer.cs">
+      <DependentUpon>ThreadSafeButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NandMMC\ThreadSafeComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NandMMC\ThreadSafeComboBox.designer.cs">
+      <DependentUpon>ThreadSafeComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NandMMC\ThreadSafeToolStripLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="x360utils\Common\BitOperations.cs" />
+    <Compile Include="x360utils\Common\DateTimeUtils.cs" />
+    <Compile Include="x360utils\Common\StringUtils.cs" />
+    <Compile Include="x360utils\Common\Translators.cs" />
+    <Compile Include="Classes\Function Classes\Checks.cs" />
+    <Compile Include="Classes\Build.cs" />
+    <Compile Include="x360utils\CPUKey\CpukeyUtils.cs" />
+    <Compile Include="x360utils\CPUKey\FUSE.cs" />
+    <Compile Include="x360utils\Debug.cs" />
+    <Compile Include="x360utils\EventArg.cs" />
+    <Compile Include="x360utils\NAND\Bootloader.cs" />
+    <Compile Include="x360utils\NAND\Cryptography.cs" />
+    <Compile Include="x360utils\NAND\FsRootEntry.cs" />
+    <Compile Include="x360utils\NAND\Keyvault.cs" />
+    <Compile Include="x360utils\NAND\MobileEntry.cs" />
+    <Compile Include="x360utils\NAND\NANDFileSystem.cs" />
+    <Compile Include="x360utils\NAND\NANDReader.cs" />
+    <Compile Include="x360utils\NAND\NANDSpare.cs" />
+    <Compile Include="x360utils\NAND\SMC.cs" />
+    <Compile Include="x360utils\NAND\SMCConfig.cs" />
+    <Compile Include="x360utils\NAND\X360NAND.cs" />
+    <Compile Include="Classes\Special Classes\ExtendedProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\Special Classes\isadmin.cs" />
+    <Compile Include="Classes\Special Classes\LoadingCircle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\Special Classes\LoadingCircle.designer.cs">
+      <DependentUpon>LoadingCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Special Classes\NandproSet.cs" />
+    <Compile Include="Classes\Special Classes\osinfo.cs" />
+    <Compile Include="Classes\Prepare.cs" />
+    <Compile Include="Classes\Function Classes\NandOP.cs" />
+    <Compile Include="Classes\Function Classes\Crypto.cs" />
+    <Compile Include="Classes\Function Classes\Misc.cs" />
+    <Compile Include="Classes\CPUKey.cs" />
+    <Compile Include="x360utils\Specials\JungleFlasher.cs" />
+    <Compile Include="x360utils\Specials\Xk3y.cs" />
+    <Compile Include="x360utils\x360UtilsException.cs" />
+    <Compile Include="Forms\Controls\Output.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\Output.Designer.cs">
+      <DependentUpon>Output.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls\Mainright.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\Mainright.Designer.cs">
+      <DependentUpon>Mainright.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls\Download.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\Download.Designer.cs">
+      <DependentUpon>Download.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls\xeBuild.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\xeBuild.Designer.cs">
+      <DependentUpon>xeBuild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls\Rightside.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\Rightside.Designer.cs">
+      <DependentUpon>Rightside.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SMCConfigEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SMCConfigEdit.Designer.cs">
+      <DependentUpon>SMCConfigEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DLConf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DLConf.Designer.cs">
+      <DependentUpon>DLConf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Versions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Versions.Designer.cs">
+      <DependentUpon>Versions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Extract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Extract.Designer.cs">
+      <DependentUpon>Extract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IPScan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IPScan.Designer.cs">
+      <DependentUpon>IPScan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NandproSettingsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NandproSettingsWindow.Designer.cs">
+      <DependentUpon>NandproSettingsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Paramedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Paramedit.Designer.cs">
+      <DependentUpon>Paramedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Nandpro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Nandpro.Designer.cs">
+      <DependentUpon>Nandpro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\Controls\Static.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\Static.Designer.cs">
+      <DependentUpon>Static.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Controls\Output.resx">
+      <DependentUpon>Output.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\Mainright.resx">
+      <DependentUpon>Mainright.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\Download.resx">
+      <DependentUpon>Download.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\xeBuild.resx">
+      <DependentUpon>xeBuild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\Rightside.resx">
+      <DependentUpon>Rightside.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\Static.resx">
+      <DependentUpon>Static.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PictureViewer.resx">
+      <DependentUpon>PictureViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SMCConfigEdit.resx">
+      <DependentUpon>SMCConfigEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DLConf.resx">
+      <DependentUpon>DLConf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Versions.resx">
+      <DependentUpon>Versions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Extract.resx">
+      <DependentUpon>Extract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IPScan.resx">
+      <DependentUpon>IPScan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NandproSettingsWindow.resx">
+      <DependentUpon>NandproSettingsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Paramedit.resx">
+      <DependentUpon>Paramedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Nandpro.resx">
+      <DependentUpon>Nandpro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NandMMC\nandMMC.resx">
+      <DependentUpon>nandMMC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NandMMC\ThreadSafeButton.resx">
+      <DependentUpon>ThreadSafeButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NandMMC\ThreadSafeComboBox.resx">
+      <DependentUpon>ThreadSafeComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Embedded\smc_util.exe" />
+    <EmbeddedResource Include="Embedded\smc_util.ini" />
+    <EmbeddedResource Include="Embedded\7za.exe" />
+    <Content Include="app.ico" />
+    <Content Include="Changelog.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Icons\mmc-logo.png" />
+    <None Include="Icons\sd-card.ico" />
+    <Content Include="logo.ico" />
+    <Content Include="NandMMC\Readme.txt" />
+    <Content Include="x360utils\NAND\SMCPatches\1.10.xml" />
+    <Content Include="x360utils\NAND\SMCPatches\1.13.xml" />
+    <Content Include="x360utils\NAND\SMCPatches\1.50.xml" />
+    <Content Include="x360utils\NAND\SMCPatches\1.51.xml" />
+    <Content Include="x360utils\NAND\SMCPatches\1.53.xml" />
+    <Content Include="x360utils\NAND\SMCPatches\1.60.xml" />
+    <Content Include="x360utils\NAND\SMCPatches\1.90.xml" />
+    <Content Include="x360utils\NAND\SMCPatches\2.03.xml" />
+    <Content Include="Icons\app.ico" />
+    <Content Include="Icons\logo.png" />
+    <None Include="Icons\Swizzy_soft.png" />
+    <Content Include="launch.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Notes\NANDPro" />
+    <Content Include="options_info.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Icons\good.ico" />
+    <None Include="Icons\error.ico" />
+    <None Include="Icons\cancel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
