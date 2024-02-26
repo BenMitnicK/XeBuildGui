@@ -1,0 +1,8 @@
+﻿NandproSet.workdir - Default Work directory
+NandproSet.npvers - Default Nandpro Version
+NandproSet.size - Default Dump Size
+NandproSet.device - Default Dump device
+NandproSet.dumptimes - Default Times to dump
+NandproSet.filenames[*] - Name/path to dump (* + 1)
+NandproSet.eccfile - Name of ECC to write (to file or nand)
+NandproSet.binfile - Name of BIN to write to nand
